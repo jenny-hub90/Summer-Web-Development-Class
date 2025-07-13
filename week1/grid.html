@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        padding: 10px;
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: repeat(5, 250px);
+        grid-template-rows: repeat(3, 200px);
+        justify-content: center;
+        align-content: center;
+        grid-gap: 10px;
+      }
+      .box {
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      /*for tablet*/
+      @media (max-width: 1024px) and (min-width: 768px) {
+        .container {
+          background-color: black;
+          padding: 10px;
+          margin: 0px auto;
+          display: grid;
+          grid-template-columns: repeat(3, 250px);
+          grid-template-rows: repeat(5, 200px);
+          justify-content: center;
+          align-content: center;
+          grid-gap: 10px;
+        }
+      }
+
+      /*for mobile*/
+      @media (max-width: 767px) {
+        .container {
+          background-color: gray;
+          padding: 10px;
+          margin: 0px auto;
+          display: grid;
+          grid-template-columns: repeat(1, 250px);
+          grid-template-rows: repeat(10, 200px);
+          justify-content: center;
+          align-content: center;
+          grid-gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box item1">
+        <img src="Image/barista.jpg" alt="barista" />
+      </div>
+      <div class="box item2">
+        <img src="Image/australianlamingtons.jpg" alt="barista" />
+      </div>
+      <div class="box item3">
+        <img src="Image/chocolatetiramisu.jpg" alt="barista" />
+      </div>
+      <div class="box item4">
+        <img src="Image/churros.jpg" alt="barista" />
+      </div>
+      <div class="box item5">
+        <img src="Image/coffeebeans.jpg" alt="barista" />
+      </div>
+      <div class="box item6">
+        <img src="Image/gulabjamun.jpg" alt="barista" />
+      </div>
+      <div class="box item7">
+        <img src="Image/lungocoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item8">
+        <img src="Image/icedcoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item9">
+        <img src="Image/filtercoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item10">
+        <img src="Image/dalgonacoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item6">
+        <img src="Image/gulabjamun.jpg" alt="barista" />
+      </div>
+      <div class="box item7">
+        <img src="Image/lungocoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item8">
+        <img src="Image/icedcoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item9">
+        <img src="Image/filtercoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item10">
+        <img src="Image/dalgonacoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item6">
+        <img src="Image/gulabjamun.jpg" alt="barista" />
+      </div>
+      <div class="box item7">
+        <img src="Image/lungocoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item8">
+        <img src="Image/icedcoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item9">
+        <img src="Image/filtercoffee.jpg" alt="barista" />
+      </div>
+      <div class="box item10">
+        <img src="Image/dalgonacoffee.jpg" alt="barista" />
+      </div>
+    </div>
+  </body>
+</html>
