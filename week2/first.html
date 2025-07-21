@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <script>
+      console.log("Hello, JavaScript!");
+      let name = "Alice"; // Can be reassigned
+      const age = 25; // Cannot be reassigned
+      var oldWay = 10; // Outdated, avoid
+      name = "jenny";
+      console.log(name);
+      oldWay = 15;
+      console.log(oldWay);
+
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => console.log(i), 100); // Outputs 3, 3, 3
+      }
+      let day = prompt("Enter the day:");
+      switch (day) {
+        case "Monday":
+          console.log("Start of week");
+          break;
+        default:
+          console.log("Other day");
+      }
+      for (let i = 0; i < 5; i++) {
+        console.log(i); // 0, 1, 2, 3, 4
+      }
+      let j = 0;
+      while (j < 5) {
+        j++;
+        console.log(j);
+      }
+      let k = 0;
+      do {
+        k++;
+        console.log(k);
+      } while (k < 5);
+      let fruits = ["apple", "banana", "orange"];
+      for (let fruit of fruits) {
+        console.log(fruit);
+      }
+      console.log("Starting");
+      const user = { name: "Alice", age: 25 };
+      for (const key in user) {
+        console.log(key, user[key]);
+      }
+      
+
+    </script>
+  </body>
+</html>
